@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_margin="8dp"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:background="@drawable/curve_shap"
+        android:layout_height="wrap_content">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:layout_height="wrap_content">
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_marginTop="10dp"
+            android:id="@+id/customdialog_loadingimg"
+            />
+</LinearLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Developer: Shahab Azimi"
+            android:layout_marginTop="10dp"
+
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:textColor="@color/primary"
+            style="@style/Base.TextAppearance.AppCompat.Medium"
+            android:gravity="center"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="azimishahab@gmail.com"
+            android:layout_marginTop="10dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:textColor="@color/primary"
+            style="@style/Base.TextAppearance.AppCompat.Medium"
+            android:gravity="center"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Version"
+            android:id="@+id/customdialog_versionname"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/primary_dark"
+            style="@style/Base.TextAppearance.AppCompat.Caption"
+            android:gravity="center"
+            />
+
+
+    </LinearLayout>
+</LinearLayout>

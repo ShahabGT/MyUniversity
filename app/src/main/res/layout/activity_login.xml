@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#1ad1d1"
+    tools:context="projects.shahabgt.com.myuniversity.Login">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:gravity="center"
+        android:background="@drawable/shape"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:paddingTop="5dp"
+            android:paddingBottom="10dp"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_marginBottom="5dp"
+                android:src="@drawable/loginimg"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:padding="7dp"
+                android:layout_height="wrap_content"
+                android:textColorHint="#637083"
+                android:inputType="number"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:id="@+id/login_id"
+                android:textDirection="ltr"
+                android:textColor="#000000"
+                android:background="@drawable/shape2"
+                android:layout_marginBottom="1dp"
+                android:hint="Student Number"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:padding="7dp"
+                android:textColorHint="#637083"
+                android:inputType="textPassword"
+                android:textColor="#000000"
+                android:id="@+id/login_pass"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/shape3"
+                android:hint="Password"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:textColor="#ffffff"
+                android:id="@+id/login_signon"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/shape4"
+                android:layout_marginBottom="10dp"
+                android:text="Sign in"/>
+
+        </LinearLayout>
+    </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

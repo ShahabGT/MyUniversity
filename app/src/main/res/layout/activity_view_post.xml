@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:fab="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:id="@+id/viewpost_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="projects.shahabgt.com.myuniversity.ViewPost">
+    <FrameLayout
+        android:id="@+id/toolbar_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <include
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        layout="@layout/toolbar_layout"/>
+    <com.miguelcatalan.materialsearchview.MaterialSearchView
+        android:id="@+id/search_view"
+        android:hint="Search..."
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    </FrameLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:id="@+id/viewpost_error"
+        android:gravity="center"
+        android:visibility="gone"
+        android:background="#ffffff"
+        android:layout_height="match_parent">
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:layout_width="150dp"
+            android:id="@+id/viewpost_nointernet"
+            android:background="@color/transparent"
+            android:layout_height="150dp" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:id="@+id/viewpost_loadinglayout"
+        android:gravity="center"
+        android:visibility="gone"
+        android:layout_height="match_parent">
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:layout_width="50dp"
+            android:id="@+id/viewpost_loadingimg"
+            android:layout_height="50dp" />
+    </LinearLayout>
+
+<android.support.design.widget.CoordinatorLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <com.baoyz.widget.PullRefreshLayout
+        android:id="@+id/viewpost_swipeRefreshLayout"
+        android:layout_width="match_parent"
+        app:refreshType="smartisan"
+        android:layout_height="match_parent">
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:id="@+id/viewpost_recylcer"
+        android:background="#ffffff"
+        android:layout_height="match_parent"/>
+
+    </com.baoyz.widget.PullRefreshLayout>
+    <com.github.clans.fab.FloatingActionMenu
+        android:id="@+id/fab_menu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_gravity="right|bottom"
+        fab:menu_fab_size="normal"
+        fab:menu_animationDelayPerItem="50"
+        fab:menu_icon="@mipmap/ic_fab_filter"
+        fab:menu_buttonSpacing="0dp"
+        fab:menu_labels_margin="0dp"
+        fab:menu_labels_showAnimation="@anim/fab_slide_in_from_left"
+        fab:menu_labels_hideAnimation="@anim/fab_slide_out_to_left"
+        fab:menu_labels_paddingTop="4dp"
+        fab:menu_labels_paddingRight="8dp"
+        fab:menu_labels_paddingBottom="4dp"
+        fab:menu_labels_paddingLeft="8dp"
+        fab:menu_labels_padding="8dp"
+        fab:menu_labels_textColor="#ffffff"
+        app:menu_labels_showShadow="false"
+        fab:menu_labels_textSize="14sp"
+        fab:menu_labels_singleLine="true"
+        fab:menu_labels_position="left"
+        fab:menu_openDirection="up"
+        fab:menu_fab_label="Close"
+        >
+    <com.github.clans.fab.FloatingActionButton
+        android:id="@+id/fab_item1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|right"
+        android:layout_marginBottom="8dp"
+        android:layout_marginRight="8dp"
+        android:src="@mipmap/ic_select"
+        app:fab_colorNormal="#01b1b1"
+        app:fab_colorPressed="#01b1b5"
+        app:fab_size="normal"
+        app:fab_showAnimation="@anim/fab_scale_up"
+        app:fab_hideAnimation="@anim/fab_scale_down"
+        app:fab_label="Seletc Subject"
+        />
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/fab_item2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|right"
+            android:layout_marginBottom="8dp"
+            android:layout_marginRight="8dp"
+            android:src="@mipmap/ic_select2"
+            app:fab_colorNormal="#01b1b1"
+            app:fab_colorPressed="#01b1b5"
+            app:fab_size="normal"
+            app:fab_showAnimation="@anim/fab_scale_up"
+            app:fab_hideAnimation="@anim/fab_scale_down"
+            app:fab_label="Select Department"
+            />
+        <com.github.clans.fab.FloatingActionButton
+        android:id="@+id/fab_item3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|right"
+        android:layout_marginBottom="8dp"
+        android:layout_marginRight="8dp"
+        android:src="@mipmap/ic_select3"
+        app:fab_colorNormal="#01b1b1"
+        app:fab_colorPressed="#01b1b5"
+        app:fab_size="normal"
+        app:fab_showAnimation="@anim/fab_scale_up"
+        app:fab_hideAnimation="@anim/fab_scale_down"
+        app:fab_label="Select SubDepartment"
+        />
+
+    </com.github.clans.fab.FloatingActionMenu>
+</android.support.design.widget.CoordinatorLayout>
+
+</LinearLayout>

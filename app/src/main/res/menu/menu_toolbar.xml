@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+    <item
+        android:id="@+id/action_search"
+        android:icon="@mipmap/ic_filter_search"
+        android:orderInCategory="100"
+        android:title="Search"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/action_hot"
+        android:icon="@mipmap/ic_filter_hot"
+        android:orderInCategory="100"
+        android:title="Hot Posts"
+        app:showAsAction="always" />
+</menu>

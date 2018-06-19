@@ -1,0 +1,325 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+              android:background="#ffffff"
+    android:layout_height="match_parent"
+    tools:context="projects.shahabgt.com.myuniversity.NewPost">
+
+    <include
+        layout="@layout/toolbar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/newpost_select1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:gravity="right"
+                android:orientation="horizontal"
+                android:background="@drawable/selectshape"
+                android:padding="1dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:textColor="#ffffff"
+                    android:text="Select Topic"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Body1"
+                    android:textStyle="bold"/>
+    <ImageView
+        android:layout_width="25dp"
+        android:layout_marginRight="5dp"
+        android:layout_height="25dp"
+        android:layout_gravity="center"
+        android:src="@mipmap/ic_select"/>
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/newpost_selectLin1"
+                android:layout_width="match_parent"
+                android:visibility="gone"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:background="@drawable/subshape"
+                android:gravity="left|center"
+                android:orientation="horizontal"
+                android:padding="1dp">
+
+                <TextView
+                    android:id="@+id/newpost_selectText1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:gravity="center"
+                    android:padding="2dp"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Body1"
+                    android:textColor="#ffffff"
+                    android:textStyle="bold"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/newpost_select2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/selectshape"
+                android:gravity="right"
+                android:orientation="horizontal"
+                android:padding="1dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:textColor="#ffffff"
+                    android:text="Select Department"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Body1"
+                    android:textStyle="bold"/>
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_height="25dp"
+                    android:layout_gravity="center"
+                    android:src="@mipmap/ic_select2"/>
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/newpost_selectLin2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:layout_gravity="left"
+                android:background="@drawable/subshape"
+                android:gravity="left|center"
+                android:orientation="horizontal"
+                android:padding="1dp">
+
+                <TextView
+                    android:id="@+id/newpost_selectText2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:gravity="center"
+                    android:padding="2dp"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Body1"
+                    android:textColor="#ffffff"
+                    android:textStyle="bold"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/newpost_select3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/selectshape"
+                android:gravity="right"
+                android:orientation="horizontal"
+                android:padding="1dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:textColor="#ffffff"
+                    android:text="Select SubDepartment"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Body1"
+                    android:textStyle="bold"/>
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_height="25dp"
+                    android:layout_gravity="center"
+                    android:src="@mipmap/ic_select3"/>
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/newpost_selectLin3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:visibility="gone"
+                android:background="@drawable/subshape"
+                android:gravity="right|center"
+                android:orientation="horizontal"
+                android:padding="1dp">
+
+                <TextView
+                    android:id="@+id/newpost_selectText3"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:gravity="center"
+                    android:padding="2dp"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Body1"
+                    android:textColor="#ffffff"
+                    android:textStyle="bold"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+
+                android:layout_marginTop="8dp"
+                android:background="@drawable/backgroundshape"
+                android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:background="#ffffff"
+                android:gravity="right"
+                android:orientation="horizontal"
+                android:padding="5dp">
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="5dp"
+                    android:theme="@style/TextLabel">
+
+                    <EditText
+                        android:id="@+id/newpost_title"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:hint="Title"
+                        android:maxLength="40"
+                        android:singleLine="true"
+                        android:padding="7dp"
+                        android:textAppearance="@style/Base.TextAppearance.AppCompat.Body1"/>
+                </android.support.design.widget.TextInputLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:background="#ffffff"
+                android:gravity="right"
+                android:orientation="vertical"
+                android:padding="5dp">
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="5dp"
+                    android:theme="@style/TextLabel">
+
+                    <EditText
+                        android:id="@+id/newpost_comment"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:hint="Description"
+                        android:maxLength="500"
+                        android:padding="7dp"
+                        android:textAppearance="@style/Base.TextAppearance.AppCompat.Body1"/>
+                </android.support.design.widget.TextInputLayout>
+            </LinearLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/toolbar_text"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Body1"
+                android:gravity="right"
+                android:textColor="#000000"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="15dp"
+                android:text="Add Image(s)"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:background="#ffffff"
+                android:layout_marginRight="5dp"
+                android:gravity="left"
+                android:orientation="horizontal"
+                android:padding="5dp"
+                android:weightSum="4">
+
+                <ImageView
+                    android:id="@+id/newpost_img4"
+                    android:layout_width="0dp"
+                    android:layout_height="150dp"
+                    android:layout_weight="1"
+                    android:src="@mipmap/ic_addimg"
+                    android:visibility="gone"
+                    />
+
+                <ImageView
+                    android:id="@+id/newpost_img3"
+                    android:layout_width="0dp"
+                    android:layout_height="150dp"
+                    android:layout_weight="1"
+                    android:src="@mipmap/ic_addimg"
+                    android:visibility="gone"
+                   />
+
+                <ImageView
+                    android:id="@+id/newpost_img2"
+                    android:layout_width="0dp"
+                    android:layout_height="150dp"
+                    android:layout_weight="1"
+                    android:src="@mipmap/ic_addimg"
+                    android:visibility="gone"
+                   />
+
+                <ImageView
+                    android:id="@+id/newpost_img"
+                    android:layout_width="0dp"
+                    android:layout_height="150dp"
+                    android:layout_weight="1"
+                    android:src="@mipmap/ic_addimg"/>
+            </LinearLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_margin="5dp"
+                    android:background="#6e6e6e"
+                    android:layout_height="15dp"/>
+            <LinearLayout
+                android:id="@+id/newpost_send"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_margin="5dp"
+                android:background="@drawable/shape9"
+                android:gravity="center"
+                android:padding="5dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="8dp"
+                        android:paddingTop="8dp"
+                        android:text="Post"
+                        android:textColor="#ffffff"
+                        android:textSize="18sp"
+                        android:textStyle="bold"/>
+                </LinearLayout>
+
+            </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

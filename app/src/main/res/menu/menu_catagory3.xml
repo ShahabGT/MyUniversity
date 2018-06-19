@@ -1,0 +1,40 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:tools="http://schemas.android.com/tools"
+      tools:context="com.shehabic.droppy_samples.MainActivity">
+    <group android:id="@+id/catagory3_1"
+           android:checkableBehavior="single">
+        <item
+            android:id="@+id/drop30"
+            android:title="@string/m30"
+            />
+    </group>
+    <group android:id="@+id/catagory3_2"
+           android:checkableBehavior="single">
+        <item
+            android:id="@+id/drop31"
+            android:title="@string/m31"
+            />
+    </group>
+    <group android:id="@+id/catagory3_3"
+           android:checkableBehavior="single">
+        <item
+            android:id="@+id/drop32"
+            android:title="@string/m32"
+            />
+    </group>
+    <group android:id="@+id/catagory3_4"
+           android:checkableBehavior="single">
+        <item
+            android:id="@+id/drop33"
+            android:title="@string/m33"
+            />
+    </group>
+    <group android:id="@+id/catagory3_5"
+           android:checkableBehavior="single">
+        <item
+            android:id="@+id/drop34"
+            android:title="@string/m34"
+            />
+    </group>
+
+</menu>

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/mainDrawer"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="projects.shahabgt.com.myuniversity.Main"
+    xmlns:tools="http://schemas.android.com/tools">
+<FrameLayout
+    android:layout_width="match_parent"
+    android:background="@drawable/backgroundshape"
+    android:layout_height="match_parent"
+    >
+    <nl.dionsegijn.konfetti.KonfettiView
+        android:id="@+id/viewKonfetti"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+        <ImageView
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_gravity="left"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:src="@mipmap/ic_setting"
+            android:text="exit"
+            android:id="@+id/main_exit"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="10dp"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="180dp"
+                android:layout_marginTop="7dp"
+                android:layout_height="180dp"
+                android:id="@+id/main_logo"
+                android:layout_gravity="top|center"
+                android:src="@drawable/mainimg"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:text="My University"
+                android:gravity="center"
+                style="@style/Base.TextAppearance.AppCompat.Headline"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_above="@+id/main_view"
+            android:layout_marginBottom="10dp"
+            android:weightSum="2"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_gravity="left"
+
+                android:layout_height="wrap_content"
+                android:id="@+id/main_newPost"
+                android:src="@drawable/mainnew"/>
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:id="@+id/main_explore"
+                android:layout_height="wrap_content"
+                android:padding="3dp"
+                android:src="@drawable/mainexplore"/>
+
+        </LinearLayout>
+        <View
+            android:layout_alignParentBottom="true"
+            android:id="@+id/main_view"
+            android:layout_width="match_parent"
+            android:background="#01b1b1"
+            android:layout_height="20dp"/>
+    </RelativeLayout>
+
+</FrameLayout>
+    </LinearLayout>

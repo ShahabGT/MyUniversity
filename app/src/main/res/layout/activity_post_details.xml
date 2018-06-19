@@ -1,0 +1,456 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="#ffffff"
+    android:id="@+id/postdetails_layout"
+    android:layout_height="match_parent"
+    tools:context="projects.shahabgt.com.myuniversity.PostDetails">
+
+    <include
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        layout="@layout/toolbar_layout"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:id="@+id/postdetails_error"
+        android:gravity="center"
+        android:visibility="gone"
+        android:background="#ffffff"
+        android:layout_height="match_parent">
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:layout_width="150dp"
+            android:id="@+id/postdetails_nointernet"
+            android:background="@color/transparent"
+            android:layout_height="150dp" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:id="@+id/postdetails_loadinglayout"
+        android:gravity="center"
+        android:visibility="gone"
+        android:layout_height="match_parent">
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:layout_width="50dp"
+            android:id="@+id/postdetails_loadingimg"
+            android:layout_height="50dp" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/list"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:gravity="left"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:padding="2dp"
+                    android:text="Creation Date: "
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Body1" />
+
+                <TextView
+                    android:id="@+id/postdetails_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:padding="2dp"
+                    android:text="date"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Body1" />
+                <TextView
+                    android:id="@+id/postdetails_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp"
+                    android:gravity="right"
+                    android:padding="2dp"
+                    android:text="time"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Body1" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#f6f6f6"
+                    android:orientation="vertical">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="left"
+                        android:orientation="horizontal"
+                        android:weightSum="4">
+
+                        <com.like.LikeButton
+                            android:id="@+id/postdetails_like"
+                            android:layout_width="0dp"
+                            android:layout_height="30dp"
+                            android:layout_weight="1"
+                            app:anim_scale_factor="0.5"
+                            app:icon_size="50dp"
+                            app:icon_type="heart"
+                            app:like_drawable="@mipmap/ic_like_enable"
+                            app:unlike_drawable="@mipmap/ic_like_disable" />
+
+                        <com.like.LikeButton
+                            android:id="@+id/postdetails_dislike"
+                            android:layout_width="0dp"
+                            android:layout_height="30dp"
+                            android:layout_weight="1"
+                            app:anim_scale_factor="0.5"
+                            app:icon_size="50dp"
+                            app:icon_type="heart"
+                            app:like_drawable="@mipmap/ic_dislike_enable"
+                            app:unlike_drawable="@mipmap/ic_dislike_disable" />
+
+                        <ImageView
+                            android:id="@+id/postdetails_comments"
+                            android:layout_width="0dp"
+                            android:layout_height="30dp"
+                            android:layout_weight="1"
+                            android:src="@mipmap/ic_comments" />
+
+                        <com.like.LikeButton
+                            android:id="@+id/postdetails_star"
+                            android:layout_width="0dp"
+                            android:layout_height="30dp"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            app:anim_scale_factor="0.5"
+                            app:icon_size="23dp"
+                            app:icon_type="star" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#eeeeee"
+                        android:gravity="left"
+                        android:orientation="horizontal"
+                        android:weightSum="4">
+
+                        <TextView
+                            android:id="@+id/postdetails_like_c"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="0"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/postdetails_dislike_c"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="0"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/postdetails_comments_c"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="0"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/postdetails_star_c"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="Favorite"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+                </LinearLayout>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="6dp"
+                android:layout_marginTop="6dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/topshape"
+                        android:gravity="left"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:textColor="#ffffff"
+                            android:layout_marginLeft="5dp"
+                            android:gravity="right"
+                            android:text="State:"
+                            android:textAppearance="@style/Base.TextAppearance.AppCompat.Body1"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/postdetails_state"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:gravity="right"
+                            android:padding="2dp"
+                            android:text="state"
+                            android:textAppearance="@style/Base.TextAppearance.AppCompat.Body1"
+                            android:textColor="#ffffff" />
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="3dp"
+                        android:paddingBottom="3dp"
+                        android:gravity="left"
+                        android:background="#f1f8fe"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_height="wrap_content"
+                            android:gravity="right"
+                            android:text="Subject: "
+                            android:textAppearance="@style/Base.TextAppearance.AppCompat.Body1"
+                            android:textStyle="bold" />
+                        <TextView
+                            android:id="@+id/postdetails_subject"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="right"
+                            android:padding="2dp"
+                            android:text="subject"
+                            android:textAppearance="@style/Base.TextAppearance.AppCompat.Body1"/>
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#fef8f2"
+                        android:paddingTop="3dp"
+                        android:paddingBottom="3dp"
+                        android:gravity="left"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:gravity="right"
+                            android:text="Department: "
+                            android:textAppearance="@style/Base.TextAppearance.AppCompat.Body1"
+                            android:textStyle="bold" />
+                        <TextView
+                            android:id="@+id/postdetails_catagory"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="right"
+                            android:padding="2dp"
+                            android:text="catagory"
+                            android:textAppearance="@style/Base.TextAppearance.AppCompat.Body1"/>
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="3dp"
+                        android:paddingBottom="3dp"
+                        android:gravity="left"
+                        android:background="#f1f8fe"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="right"
+                            android:layout_marginLeft="5dp"
+                            android:text="SubDepartment: "
+                            android:textAppearance="@style/Base.TextAppearance.AppCompat.Body1"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/postdetails_catagory_sub"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="right"
+                            android:padding="2dp"
+                            android:text="catagory_sub"
+                            android:textAppearance="@style/Base.TextAppearance.AppCompat.Body1"/>
+
+
+                    </LinearLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="3dp"
+                        android:paddingBottom="3dp"
+                        android:gravity="left"
+                        android:background="#fef8f2"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:id="@+id/postdetails_titlex"
+                            android:layout_width="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:gravity="right"
+                            android:text="Title: "
+                            android:textAppearance="@style/Base.TextAppearance.AppCompat.Body1"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/postdetails_title"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_toRightOf="@+id/postdetails_titlex"
+                            android:gravity="right"
+                            android:padding="2dp"
+                            android:text="title"
+                            android:textAppearance="@style/Base.TextAppearance.AppCompat.Body1" />
+
+
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="3dp"
+                        android:paddingBottom="3dp"
+                        android:gravity="left"
+                        android:background="#f1f8fe"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:id="@+id/postdetails_textx"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:gravity="right"
+                            android:text="Description:"
+                            android:textAppearance="@style/Base.TextAppearance.AppCompat.Body2"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:paddingTop="3dp"
+                        android:paddingBottom="3dp"
+                        android:gravity="left"
+                        android:background="#f1f8fe"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/postdetails_text"
+                            android:layout_width="wrap_content"
+                            android:layout_marginLeft="15dp"
+                            android:layout_height="wrap_content"
+                            android:layout_toLeftOf="@+id/postdetails_textx"
+                            android:gravity="right"
+                            android:text="text"
+                            android:textAppearance="@style/Base.TextAppearance.AppCompat.Body1" />
+
+                    </LinearLayout>
+                    <View
+                        android:layout_width="match_parent"
+                        android:background="#6e6e6e"
+                        android:layout_height="5dp"/>
+                </LinearLayout>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_gravity="right"
+                android:clickable="true"
+                android:visibility="gone"
+                android:padding="10dp"
+                android:background="#01b1b1"
+                android:id="@+id/postdetails_report"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:gravity="center"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:layout_gravity="center"
+                    android:textColor="#ffffff"
+                    android:textSize="17sp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:gravity="center"
+                    android:text="Report This Post"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Body1"
+                    android:textStyle="bold" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_gravity="center"
+                android:clickable="true"
+                android:id="@+id/postdetails_delete"
+                android:visibility="gone"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:padding="10dp"
+                android:background="#01b1b1"
+                android:gravity="center"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:gravity="right"
+                    android:textSize="17sp"
+                    android:textColor="#ffffff"
+                    android:text="Delete Request"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Body1"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

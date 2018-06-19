@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:id="@+id/viewcomments_layout"
+    android:layout_height="match_parent"
+    tools:context="projects.shahabgt.com.myuniversity.ViewComments"
+   >
+
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_above="@+id/viewcomments_linear"
+    android:layout_height="match_parent"
+    >
+
+    <include
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        layout="@layout/toolbar_layout"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:id="@+id/viewcomments_error"
+        android:gravity="center"
+        android:visibility="gone"
+        android:background="#ffffff"
+        android:layout_height="match_parent">
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:layout_width="150dp"
+            android:id="@+id/viewcomments_nointernet"
+            android:background="@color/transparent"
+            android:layout_height="150dp" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:id="@+id/viewcomments_loadinglayout"
+        android:gravity="center"
+        android:visibility="gone"
+        android:layout_height="match_parent">
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:layout_width="50dp"
+            android:id="@+id/viewcomments_loadingimg"
+            android:layout_height="50dp" />
+        </LinearLayout>
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:background="#ffffff"
+        android:id="@+id/viewcomments_recylcer"
+        android:layout_height="match_parent">
+
+    </android.support.v7.widget.RecyclerView>
+
+</LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:gravity="left|center"
+        android:padding="5dp"
+        android:weightSum="115"
+        android:id="@+id/viewcomments_linear"
+        android:background="@drawable/shape6"
+        android:layout_alignParentBottom="true"
+        android:layout_height="wrap_content">
+
+
+        <EditText
+            style="@style/Widget.AppCompat.EditText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@android:color/transparent"
+            android:id="@+id/viewcomments_text"
+            android:layout_weight="114"
+            android:gravity="left|center"
+            android:hint="Message..."
+            android:inputType="textCapSentences|textMultiLine"
+            android:maxLength="400"
+            android:maxLines="5"
+            android:padding="5dp"
+           />
+        <ImageView
+            android:layout_width="35dp"
+            android:layout_weight="1"
+            android:id="@+id/viewcomments_send"
+            android:src="@mipmap/ic_sendc"
+            android:layout_height="35dp" />
+
+
+    </LinearLayout>
+</RelativeLayout>

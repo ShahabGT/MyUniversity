@@ -1,0 +1,81 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:tools="http://schemas.android.com/tools"
+      tools:context="com.shehabic.droppy_samples.MainActivity">
+    <group android:id="@+id/catagory0_1"
+           android:checkableBehavior="single">
+        <item
+            android:id="@+id/drop00"
+            android:title="@string/m00"
+            />
+       </group>
+    <group android:id="@+id/catagory0_2"
+           android:checkableBehavior="single">
+        <item
+            android:id="@+id/drop01"
+            android:title="@string/m01"
+            />
+    </group>
+    <group android:id="@+id/catagory0_3"
+           android:checkableBehavior="single">
+        <item
+            android:id="@+id/drop02"
+            android:title="@string/m02"
+            />
+    </group>
+    <group android:id="@+id/catagory0_4"
+           android:checkableBehavior="single">
+        <item
+            android:id="@+id/drop03"
+            android:title="@string/m03"
+            />
+    </group>
+    <group android:id="@+id/catagory0_5"
+           android:checkableBehavior="single">
+        <item
+            android:id="@+id/drop04"
+            android:title="@string/m04"
+            />
+    </group>
+    <group android:id="@+id/catagory0_6"
+           android:checkableBehavior="single">
+        <item
+            android:id="@+id/drop05"
+            android:title="@string/m05"
+            />
+    </group>
+    <group android:id="@+id/catagory0_7"
+           android:checkableBehavior="single">
+        <item
+            android:id="@+id/drop06"
+            android:title="@string/m06"
+            />
+    </group>
+    <group android:id="@+id/catagory0_8"
+           android:checkableBehavior="single">
+        <item
+            android:id="@+id/drop07"
+            android:title="@string/m07"
+            />
+    </group>
+    <group android:id="@+id/catagory0_9"
+           android:checkableBehavior="single">
+        <item
+            android:id="@+id/drop08"
+            android:title="@string/m08"
+            />
+    </group>
+    <group android:id="@+id/catagory0_10"
+           android:checkableBehavior="single">
+        <item
+            android:id="@+id/drop09"
+            android:title="@string/m09"
+            />
+    </group>
+    <group android:id="@+id/catagory0_11"
+           android:checkableBehavior="single">
+        <item
+            android:id="@+id/drop010"
+            android:title="@string/m010"
+            />
+    </group>
+</menu>
