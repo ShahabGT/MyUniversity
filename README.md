@@ -1,4 +1,4 @@
-# MyUniversity
+# My University
 <p>This is a work in progress and is an app that students can sign in into their account and post a new topic with up-to 4 pics, new issues that they find in their universities. Everybody else can see their post and comment on it, like it or even dislike it. </p>
 <p>Therefore, when you open the app for the first time you have to use student number and password you can use 2222222222 for student number and "peter" for password. </p>
 <p>It connects to the MySQL database and checks whether the user is available or not, if the user is available and the password is correct it will set device id (imei) and firebase token in the table. </p>
@@ -37,10 +37,5 @@
 </p>
 <p>In the message activity, sent push notification shown. I used Google Firebase for push notification. This googleservices.json is not available in the project if you want to use it just create a fire base project and download the json file and put it in the project. </p>
 <p>If you have any questions about this project, feel free to contact me. If you are interested and want to have access to the database and php files again you can contact me. All the codes are easy to read and if you have a little bit of experience in Android Developing there will not be any problem for you. </p>
+<p>At this point there is no option for creating an account, and there should be a list of universities around the world so that the students could choose form. And there might be security concerns in connections. So if you think you’ve got what it takes let’s talk and make it an international App.</p>
 <p>I used several libraries you can see them in the gradle file. </p>
-
- 
-
-
-
-
