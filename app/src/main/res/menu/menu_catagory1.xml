@@ -1,43 +1,37 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
       xmlns:tools="http://schemas.android.com/tools"
       tools:context="com.shehabic.droppy_samples.MainActivity">
-    <group android:id="@+id/catagory1_1"
-           android:checkableBehavior="single">
+    <group android:checkableBehavior="single">
         <item
             android:id="@+id/drop10"
             android:title="@string/m10"
             />
     </group>
-    <group android:id="@+id/catagory1_2"
-           android:checkableBehavior="single">
+    <group android:checkableBehavior="single">
         <item
             android:id="@+id/drop11"
             android:title="@string/m11"
             />
     </group>
-    <group android:id="@+id/catagory1_3"
-           android:checkableBehavior="single">
+    <group android:checkableBehavior="single">
         <item
             android:id="@+id/drop12"
             android:title="@string/m12"
             />
     </group>
-    <group android:id="@+id/catagory1_4"
-           android:checkableBehavior="single">
+    <group android:checkableBehavior="single">
         <item
             android:id="@+id/drop13"
             android:title="@string/m13"
             />
     </group>
-    <group android:id="@+id/catagory1_5"
-           android:checkableBehavior="single">
+    <group android:checkableBehavior="single">
         <item
             android:id="@+id/drop14"
             android:title="@string/m14"
             />
     </group>
-    <group android:id="@+id/catagory1_6"
-           android:checkableBehavior="single">
+    <group android:checkableBehavior="single">
         <item
             android:id="@+id/drop15"
             android:title="@string/m15"

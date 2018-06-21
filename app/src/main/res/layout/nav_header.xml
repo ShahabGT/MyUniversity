@@ -13,7 +13,7 @@
             android:layout_width="match_parent"
             android:layout_gravity="center"
             android:padding="10dp"
-            android:src="@drawable/mainimg"
+            android:src="@drawable/logo"
             android:layout_height="131dp"/>
         </FrameLayout>
 

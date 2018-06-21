@@ -1,15 +1,13 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
       xmlns:tools="http://schemas.android.com/tools"
       tools:context="com.shehabic.droppy_samples.MainActivity">
-    <group android:id="@+id/catagory4_1"
-           android:checkableBehavior="single">
+    <group android:checkableBehavior="single">
         <item
             android:id="@+id/drop40"
             android:title="@string/m40"
             />
         </group>
-    <group android:id="@+id/catagory4_2"
-           android:checkableBehavior="single">
+    <group android:checkableBehavior="single">
         <item
             android:id="@+id/drop41"
             android:title="@string/m41"

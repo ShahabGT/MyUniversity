@@ -127,9 +127,9 @@ public class ViewComments extends AppCompatActivity {
 
                         SimpleDateFormat df = new SimpleDateFormat("yyyy-MM-dd", Locale.ENGLISH);
                         String da = df.format(c.getTime());
-                        SimpleDateFormat tf = new SimpleDateFormat("HH-mm-ss",Locale.ENGLISH);
+                        SimpleDateFormat tf = new SimpleDateFormat("HH:mm:ss",Locale.ENGLISH);
                         String ti = tf.format(c.getTime());
-                        String time = da+"-"+ti;
+                        String time = da+" "+ti;
                         BackgroundTask backgroundTask =new BackgroundTask(ViewComments.this,1);
                         backgroundTask.execute("insertcomment",postid,person,text.getText().toString(),time,"do");
                     }else {

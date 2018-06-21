@@ -27,7 +27,7 @@ public class MyFirebaseMessagingService extends FirebaseMessagingService {
 
 //        String body = remoteMessage.getNotification().getBody();
 //        String title = remoteMessage.getNotification().getTitle();
-       String date = new SimpleDateFormat("yyyy-MM-dd-HH:mm:ss").format(new Date(remoteMessage.getSentTime()));
+       String date = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss").format(new Date(remoteMessage.getSentTime()));
 //        String click_action = remoteMessage.getNotification().getClickAction();
         Map<String, String> data = remoteMessage.getData();
         String title = data.get("title");

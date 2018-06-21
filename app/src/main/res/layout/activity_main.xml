@@ -2,10 +2,8 @@
 <LinearLayout
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:id="@+id/mainDrawer"
     android:orientation="vertical"
     xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context="projects.shahabgt.com.myuniversity.Main"
     xmlns:tools="http://schemas.android.com/tools">
 <FrameLayout
@@ -42,7 +40,7 @@
                 android:layout_height="180dp"
                 android:id="@+id/main_logo"
                 android:layout_gravity="top|center"
-                android:src="@drawable/mainimg"/>
+                android:src="@drawable/logo"/>
             <TextView
                 android:layout_width="match_parent"
                 android:text="My University"
@@ -61,18 +59,18 @@
             <ImageView
                 android:layout_width="0dp"
                 android:layout_weight="1"
+                android:padding="3dp"
                 android:layout_gravity="left"
-
                 android:layout_height="wrap_content"
                 android:id="@+id/main_newPost"
-                android:src="@drawable/mainnew"/>
+                android:src="@drawable/m_new"/>
             <ImageView
                 android:layout_width="0dp"
                 android:layout_weight="1"
                 android:id="@+id/main_explore"
                 android:layout_height="wrap_content"
                 android:padding="3dp"
-                android:src="@drawable/mainexplore"/>
+                android:src="@drawable/m_explore"/>
 
         </LinearLayout>
         <View

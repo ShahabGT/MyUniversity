@@ -53,9 +53,6 @@ public class MessagesAdapter extends RecyclerView.Adapter<MessagesAdapter.Messag
         holder.title.setText(messagesModelModel.get_title());
         holder.message.setText(messagesModelModel.get_message());
         holder.sender.setText("Sender: "+messagesModelModel.get_sender());
-     //   DateParser dp = new DateParser(messagesModelModel.get_date());
-      //  DateModel dm = DateParser.dateAndTimeParser();
-      //  String temp = dm.toString();
         holder.date.setText(messagesModelModel.get_date());
 
     }

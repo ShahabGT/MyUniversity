@@ -2,19 +2,14 @@
     <string name="crop_image_menu_rotate_right">rotate</string>
     <string name="crop_image_menu_crop">save</string>
     <string name="app_name">My University</string>
-    <string name="url">http://mojezeyefekr.ir/onlinelibrary/myuniversity/</string>
-    <string name="img_url">http://mojezeyefekr.ir/onlinelibrary/myuniversity/imgupload/</string>
-    <string name="avatar_url">http://mojezeyefekr.ir/onlinelibrary/myuniversity/avatars/</string>
+    <string name="url">http://shahabazimi.ir/MyUniversity/</string>
+    <string name="img_url">http://shahabazimi.ir/MyUniversity/imgupload/</string>
+    <string name="avatar_url">http://shahabazimi.ir/MyUniversity/avatars/</string>
 
-    <string name="sall">all</string>
+    <string name="sall">All</string>
     <string name="s1">report a problem</string>
     <string name="s2">suggestion</string>
     <string name="s3">strengths points</string>
-    <string-array name="subject">
-        <item>@string/s1</item>
-        <item>@string/s2</item>
-        <item>@string/s3</item>
-    </string-array>
     <string-array name="subjectall">
         <item>@string/sall</item>
         <item>@string/s1</item>
@@ -22,19 +17,11 @@
         <item>@string/s3</item>
     </string-array>
 
-    <string name="mall">all</string>
     <string name="m0">Administrative and Financial Deputy</string>
     <string name="m1">Research and Technology Deputy</string>
     <string name="m2">Student Deputy</string>
     <string name="m3">Educational Deputy</string>
     <string name="m4">Civil Deputy</string>
-    <string-array name="catagory">
-        <item>@string/m0</item>
-        <item>@string/m1</item>
-        <item>@string/m2</item>
-        <item>@string/m3</item>
-        <item>@string/m4</item>
-    </string-array>
     <string-array name="catagoryall">
         <item>@string/m0all</item>
         <item>@string/m0</item>
@@ -44,7 +31,7 @@
         <item>@string/m4</item>
     </string-array>
 
-    <string name="m0all">all</string>
+    <string name="m0all">All</string>
     <string name="m00">Student Welfare Fund</string>
     <string name="m01">Administrative Management</string>
     <string name="m02">Personnel Department</string>
@@ -56,19 +43,6 @@
     <string name="m08">Security Office</string>
     <string name="m09">Vehicle Affairs</string>
     <string name="m010">Services</string>
-    <string-array name="catagory0">
-        <item>@string/m00</item>
-        <item>@string/m01</item>
-        <item>@string/m02</item>
-        <item>@string/m03</item>
-        <item>@string/m04</item>
-        <item>@string/m05</item>
-        <item>@string/m06</item>
-        <item>@string/m07</item>
-        <item>@string/m08</item>
-        <item>@string/m09</item>
-        <item>@string/m010</item>
-    </string-array>
     <string-array name="catagory0all">
         <item>@string/m0all</item>
         <item>@string/m00</item>
@@ -84,21 +58,13 @@
         <item>@string/m010</item>
     </string-array>
 
-    <string name="m1all">all</string>
-    <string name="m10">مدیر پژوهش</string>
-    <string name="m11">اداره اطلاعات آمار و رایانه</string>
-    <string name="m12">دفتر طرح و برنامه و بودجه</string>
-    <string name="m13">کتابخانه مرکزی</string>
-    <string name="m14">آزمایشگاه ها</string>
-    <string name="m15">کارگاه ها</string>
-    <string-array name="catagory1">
-        <item>@string/m10</item>
-        <item>@string/m11</item>
-        <item>@string/m12</item>
-        <item>@string/m13</item>
-        <item>@string/m14</item>
-        <item>@string/m15</item>
-    </string-array>
+    <string name="m1all">All</string>
+    <string name="m10">Research Director</string>
+    <string name="m11">Department of Statistics and Computer Information</string>
+    <string name="m12">Plan and Budget Office</string>
+    <string name="m13">Central Library</string>
+    <string name="m14">Labs</string>
+    <string name="m15">Workshops</string>
     <string-array name="catagory1all">
         <item>@string/m1all</item>
         <item>@string/m10</item>
@@ -109,21 +75,13 @@
         <item>@string/m15</item>
     </string-array>
 
-    <string name="m2all">all</string>
-    <string name="m20">مدیر امور دانشجویی</string>
-    <string name="m21">خوابگاه ها</string>
-    <string name="m22">دفتر راهنمایی و مشاوره</string>
-    <string name="m23">اداره تربیت بدنی</string>
-    <string name="m24">اداره فارغ التحصیلان</string>
-    <string name="m25">بوفه و رستوران</string>
-    <string-array name="catagory2">
-        <item>@string/m20</item>
-        <item>@string/m21</item>
-        <item>@string/m22</item>
-        <item>@string/m23</item>
-        <item>@string/m24</item>
-        <item>@string/m25</item>
-    </string-array>
+    <string name="m2all">All</string>
+    <string name="m20">Student Affairs Manager</string>
+    <string name="m21">Dormitories</string>
+    <string name="m22">Consultation Office</string>
+    <string name="m23">Physical Education Office</string>
+    <string name="m24">Department of Alumni</string>
+    <string name="m25">Buffet and restaurant</string>
     <string-array name="catagory2all">
         <item>@string/m2all</item>
         <item>@string/m20</item>
@@ -134,19 +92,12 @@
         <item>@string/m25</item>
     </string-array>
 
-    <string name="m3all">all</string>
-    <string name="m30">مدیر امور آموزش</string>
-    <string name="m31">برنامه ریزی آموزشی</string>
-    <string name="m32">اداره امتحانات و ثبت نمرات</string>
-    <string name="m33">بایگانی آموزشی</string>
-    <string name="m34">اداره کارگزینی هیات علمی</string>
-    <string-array name="catagory3">
-        <item>@string/m30</item>
-        <item>@string/m31</item>
-        <item>@string/m32</item>
-        <item>@string/m33</item>
-        <item>@string/m34</item>
-    </string-array>
+    <string name="m3all">All</string>
+    <string name="m30">Director of Education Affairs</string>
+    <string name="m31">Educational Planning</string>
+    <string name="m32">Exams Office</string>
+    <string name="m33">Educational archive</string>
+    <string name="m34">Academic Staffing Department</string>
     <string-array name="catagory3all">
         <item>@string/m3all</item>
         <item>@string/m30</item>
@@ -156,13 +107,9 @@
         <item>@string/m34</item>
     </string-array>
 
-    <string name="m4all">all</string>
-    <string name="m40">اداره طراحی و اجرا</string>
-    <string name="m41">اداره نگهداری و تعمیرات</string>
-    <string-array name="catagory4">
-        <item>@string/m40</item>
-        <item>@string/m41</item>
-    </string-array>
+    <string name="m4all">All</string>
+    <string name="m40">Design and implementation office</string>
+    <string name="m41">Maintenance Department</string>
     <string-array name="catagory4all">
         <item>@string/m4all</item>
         <item>@string/m40</item>

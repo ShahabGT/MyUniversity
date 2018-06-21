@@ -99,7 +99,7 @@ public class BackgroundTask extends AsyncTask<String,Void,String>{
             builder = new AlertDialog.Builder(activity);
             builder2 = new AlertDialog.Builder(activity);
             progressDialog = new ProgressDialog(ctx);
-            progressDialog.setMessage("لطفا منتظر بمانید...");
+            progressDialog.setMessage("Please Wait...");
             progressDialog.setIndeterminate(true);
             progressDialog.setCancelable(false);
         if(stat==1) {
@@ -841,9 +841,6 @@ public class BackgroundTask extends AsyncTask<String,Void,String>{
                 pic2=data[3];
                 pic3=data[4];
                 pic4=data[5];
-                DateParser dp = new DateParser(data[7]+"-11-11-11");
-                DateModel dm = DateParser.dateAndTimeParser();
-                String temp = dm.toString();
                 date.setText(data[7]);
                 time.setText(data[6]);
                 RecyclerView mRecyclerView = activity.findViewById(R.id.list);
@@ -993,10 +990,7 @@ public class BackgroundTask extends AsyncTask<String,Void,String>{
                         commentsModel.set_cmid(jsonobject.getString("cmid"));
                         commentsModel.set_cmperson(jsonobject.getString("cmperson"));
                         commentsModel.set_comment(jsonobject.getString("comment"));
-                        DateParser dp = new DateParser(jsonobject.getString("time"));
-                        DateModel dm = DateParser.dateAndTimeParser();
-                        String temp = dm.toString();
-                        commentsModel.set_time(temp);
+                        commentsModel.set_time(jsonobject.getString("time"));
                         commentsModel.set_name(jsonobject.getString("name"));
                         commentsModel.set_avatar(jsonobject.getString("avatar"));
                         commentsModel.set_likes(jsonobject.getString("likes"));

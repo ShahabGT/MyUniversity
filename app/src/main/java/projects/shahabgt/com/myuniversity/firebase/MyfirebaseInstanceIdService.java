@@ -15,7 +15,7 @@ public class MyfirebaseInstanceIdService extends FirebaseInstanceIdService {
     public void onTokenRefresh() {
         sp= getApplicationContext().getSharedPreferences("logininfo",0);
         String recent_token = FirebaseInstanceId.getInstance().getToken();
-        FirebaseMessaging.getInstance().subscribeToTopic("iau_users");
+        FirebaseMessaging.getInstance().subscribeToTopic("myuniversity_users");
         sp.edit().putString("token",recent_token).apply();
     }
 }

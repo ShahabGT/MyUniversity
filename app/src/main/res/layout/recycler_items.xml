@@ -7,7 +7,7 @@
         android:background="#ffffff"
         android:layout_marginTop="6dp"
         android:clickable="true"
-        android:foreground="?attr/selectableItemBackground"
+
         android:layout_height="wrap_content">
     <LinearLayout
         android:orientation="vertical"
@@ -43,23 +43,10 @@
             android:orientation="horizontal"
             android:layout_gravity="left"
             android:gravity="left"
-            android:paddingRight="10dp"
+            android:padding="5dp"
             android:background="#ececec"
             android:layout_marginTop="5dp"
             android:layout_height="wrap_content">
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="catagory_sub"
-                android:textSize="12sp"
-                android:gravity="right"
-                android:id="@+id/recycler_item_catagory_sub"
-                android:textAppearance="@style/Base.TextAppearance.AppCompat.Body1"
-                />
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="،"/>
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -67,6 +54,20 @@
                 android:textSize="12sp"
                 android:gravity="right"
                 android:id="@+id/recycler_item_catagory"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Body1"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="  ,  "/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="catagory_sub"
+                android:textSize="12sp"
+                android:gravity="right"
+                android:id="@+id/recycler_item_catagory_sub"
                 android:textAppearance="@style/Base.TextAppearance.AppCompat.Body1"
                 />
         </LinearLayout>
@@ -108,6 +109,7 @@
             android:id="@+id/recycler_item_titlex"
             android:layout_alignParentLeft="true"
             android:textStyle="bold"
+            android:paddingLeft="5dp"
             android:gravity="left"
             android:textAppearance="@style/Base.TextAppearance.AppCompat.Body1"
             />
