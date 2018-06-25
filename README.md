@@ -40,7 +40,13 @@
 <p>At this point there is no option for creating an account, and there should be a list of universities around the world so that the students could choose form. And there might be security concerns in connections. So if you think you’ve got what it takes let’s talk and make it an international App.</p>
 <p>I used several libraries you can see them in the gradle file. </p>
 
-# MIT License
+# Developed By
+
+* Shahab Azimi
+ * [shahabazimi.ir](http://shahabazimi.ir) - <azimishahab@gmail.com>
+
+
+# License
 
 Copyright (c) 2018 Shahab Azimi
 
