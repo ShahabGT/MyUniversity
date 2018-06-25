@@ -39,3 +39,26 @@
 <p>If you have any questions about this project, feel free to contact me. If you are interested and want to have access to the database and php files again you can contact me. All the codes are easy to read and if you have a little bit of experience in Android Developing there will not be any problem for you. </p>
 <p>At this point there is no option for creating an account, and there should be a list of universities around the world so that the students could choose form. And there might be security concerns in connections. So if you think you’ve got what it takes let’s talk and make it an international App.</p>
 <p>I used several libraries you can see them in the gradle file. </p>
+
+# MIT License
+
+Copyright (c) 2018 Shahab Azimi
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
